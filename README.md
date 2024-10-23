@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Frontend (React) Engineer Coding Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This assignment evaluates your skills in building React applications and interacting with APIs.
 
-## Available Scripts
+## Task
 
-In the project directory, you can run:
+Develop a two-page e-commerce application using React that fetches product data from the DummyJSON API (https://dummyjson.com/docs/products).
 
-### `npm start`
+## Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Products Listing Page (/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Fetch all products data from the DummyJSON API endpoint (`/products`).
+- Display a list of products with the following information:
+  - Product image (use the `thumbnail` property from the API response)
+  - Product title
+  - Product price
 
-### `npm test`
+### 2. Product Details Page (/products/:productId)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- On click of any product on the Product Listing Page, show this product details page.
+- Dynamically fetch product details based on the `productId` parameter in the URL. Use the DummyJSON API endpoint (`/products/:productId`).
+- Display detailed information about the product, including:
+  - Product image (use the `images` property from the API response)
+  - Product title
+  - Product description
+  - Product price
+  - Discount percentage (if available)
+  - Rating
+  - Brand
+  - Category
 
-### `npm run build`
+## Bonus Points
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Implement pagination on the Products Listing Page using the `limit` and `skip` query parameters of the DummyJSON API. Each page should display 10 products.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Requirements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Use React to build the application. You can use Next.js / Remix if required.
+- Implement proper error handling for components and API calls.
+- Add any necessary CSS styling to enhance the user experience.
+- Use clean and maintainable code.
 
-### `npm run eject`
+## Deliverables
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- A GitHub repository link or zipped folder containing your project's source code.
+- A README file with instructions on how to run the application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Evaluation Criteria
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Functionality and adherence to requirements.
+- Code quality, readability, maintainability, and adherence to best practices including testing.
+- Use of modern front-end development practices and frameworks (e.g., functional components, hooks).
+- Handling of loading states and errors gracefully.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Additional Notes
 
-## Learn More
+- You can use any CSS framework or styling library of your choice (e.g., Bootstrap, Tailwind CSS).
+- Feel free to use any state management library like Redux or Context API if needed.
+- Feel free to use any additional libraries or tools you deem necessary to complete the task efficiently. We value clean, well-structured code and thoughtful design choices.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Good luck!
